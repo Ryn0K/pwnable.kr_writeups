@@ -10,7 +10,6 @@
 #include <stdio.h>
 #include <math.h>
 #include <time.h>                //Used for srand((unsigned) time(NULL)) command
-#include <process.h>             //Used for system("cls") command
 
 #define spade 06                 //Used to print spade symbol
 #define club 05                  //Used to print club symbol
@@ -115,7 +114,7 @@ void asktitle() // Function for asking player if they want to continue
 
 	if((choice1 == 'Y') || (choice1 == 'y')) // If yes, continue. Prints menu.
 	{ 
-            system("cls");
+            system("clear");
             printf("\nEnter 1 to Begin the Greatest Game Ever Played.");
 		    printf("\nEnter 2 to See a Complete Listing of Rules.");
 		    printf("\nEnter 3 to Exit Game. (Not Recommended)");
@@ -129,14 +128,14 @@ void asktitle() // Function for asking player if they want to continue
             switch(choice2) // Switch case for different choices
             {   
                 case 1: // Case to begin game
-                   system("cls");
+                   system("clear");
                    
                    play();
                                       
                    break;
                    
                 case 2: // Case to see rules
-                   system("cls");
+                   system("clear");
                    rules();
                    break;
                    
@@ -206,7 +205,7 @@ void rules() //Prints "Rules of Vlad's Blackjack" list
 
 	if((choice1 == 'Y') || (choice1 == 'y')) // If yes, continue. Prints menu.
 	{ 
-            system("cls");
+            system("clear");
             asktitle();
 	} // End if loop
    
@@ -214,7 +213,7 @@ void rules() //Prints "Rules of Vlad's Blackjack" list
 
 	else if((choice1 == 'N') || (choice1 == 'n')) // If no, convinces user to enter yes
 	{
-		system("cls");
+		system("clear");
         printf("\n                 I told you so.\n");
         asktitle();
     }
@@ -751,7 +750,7 @@ void askover() // Function for asking player if they want to play again
 
 	if((choice1 == 'Y') || (choice1 == 'y')) // If yes, continue.
 	{ 
-            system("cls");
+            system("clear");
             play();
 	}
  

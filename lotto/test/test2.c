@@ -2,7 +2,6 @@
 #include<stdlib.h>
 #include<fcntl.h>
 int main(int argc,char* argv[]){
-  printf("1\n");
   int fd = open("/dev/urandom",O_RDONLY);
   if (fd == -1){
     printf("error1");
